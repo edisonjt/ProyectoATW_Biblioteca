@@ -3,8 +3,7 @@ body {
     overflow: hidden;
     width: 100% !important;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-      background: #f2eee3;
+    background: #f2eee3;
   }
   
   
@@ -69,13 +68,15 @@ body {
     position: absolute;
   }
   
-  .content {
-    width: 250px;
-    margin: 0 auto;
-    top: 30%;
-    position: absolute;
-    left: 50%;
-    margin-left: -125px;
+  .abs-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  
+  .form {
+    width: 450px;
   }
   
   .content h2 {
