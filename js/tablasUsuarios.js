@@ -23,7 +23,7 @@ function cargarDatos(d, num) {
     for (var es = 1; es <= num; es++) {
       text += "<i class='fa fa-star fa-1x mr-1 ml-1'></i>";
     }
-    text += "</td><td class='sorting_1'><button class='btn btn-warning mr-1' id=" + x + " onclick='' type='button' data-toggle='modal' data-target='#calificacionModal' style='width: 60px;'><i class='fa fa-pen-to-square fa-2x mr-1 ml-1'></i></button><button class='btn btn-danger' onclick='' style='width: 60px;'><i class='fa fa-times fa-2x mr-2 ml-2'></i></button>";
+    text += "</td><td class='sorting_1'><button class='btn btn-warning mx-2' id=" + x + " onclick='' type='button' data-toggle='modal' data-target='#calificacionModal' style='width: 60px;'><i class='fa fa-pen-to-square fa-2x mr-1 ml-1'></i></button><button class='btn btn-danger' onclick='' style='width: 60px;'><i class='fa fa-times fa-2x mr-2 ml-2'></i></button>";
     text += "</td></tr>";
     table.innerHTML += text;
   }
@@ -54,6 +54,7 @@ $(function () {
     //celda[col].innerHTML = texte;
   });
 });
+
 // <!-- Abrir / cerrar menu --> 
 $("#content-wrapper").toggleClass("toggled");
 $("#menu-toggle").click(function (e) {
