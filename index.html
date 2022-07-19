@@ -21,12 +21,33 @@
 <div id="slideBox">
   <div class="topLayer">
     <div class="left">
+<<<<<<< HEAD
       <div class="content">
         <h2>Sign Up</h2>
         <form method="post" onsubmit="return false;">
           <div class="form-group">
             <input type="text" placeholder="Username" />
             <input type="text" placeholder="Password" />
+=======
+      <div class="container">
+        <div class="abs-center">
+          <div class="content">
+            <h2>Registrate!</h2>
+            <form method="post" onsubmit="return false;">
+              <div class="form-group">
+                <div class="row">
+                  <input type="email" placeholder="E-mail" required/>
+                  <input type="text" placeholder="Nombre de Usuario" required>
+                  <input type="text" placeholder="Teléfono" required>
+                  <input type="text" placeholder="Cédula de Identidad" required>
+                  <input type="password" placeholder="Nueva contraseña" required/>
+                  <input type="password" placeholder="Confirmar nueva contraseña" required/>
+                </div>                
+              </div>
+              <button type="submit" class="btn btn-primary">Registrarse</button>  
+            </form>
+            <button id="goLeft" type="sub" class="btn btn-outline-secondary">Ya tengo una cuenta</button>
+>>>>>>> 7e4c0811e44ad8d9daeb81f955fee4fcafe2d591
           </div>
           <div class="form-group"></div>
           <div class="form-group"></div>
@@ -37,12 +58,29 @@
       </div>
     </div>
     <div class="right">
+<<<<<<< HEAD
       <div class="content">
         <h2>Login</h2>
         <form method="post" onsubmit="return false;">
           <div class="form-group">
             <input type="text" placeholder="Username" />
             <input type="text" placeholder="Password" />
+=======
+      <div class="container">
+        <div class="abs-center">
+          <div class="content">
+            <h2>Iniciar Sesión</h2>
+            <form method="post" onsubmit="return false;">
+              <div class="form-group">
+                <div class="row">
+                  <input id="user" type="text" placeholder="Usuario" required/>
+                  <input id="password" type="password" placeholder="Contraseña" require/>
+                </div>                
+              </div><br>
+              <button id="login" type="submit" class="btn btn-primary" onclick="Login()">Iniciar sesión</button>                          
+            </form>
+            <button id="goRight" class="btn btn-outline-secondary">No tengo una cuenta</button>
+>>>>>>> 7e4c0811e44ad8d9daeb81f955fee4fcafe2d591
           </div>
           <button id="goRight" class="off">Sign Up</button>
           <button id="login" type="submit">Login</button>
