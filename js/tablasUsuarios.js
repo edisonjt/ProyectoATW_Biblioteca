@@ -1,5 +1,5 @@
 var xmlhttp = new XMLHttpRequest();
-let url = "https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json";
+let url = "../JSON/usuarios.json";
 
 function traerDatos() {
   xmlhttp.onreadystatechange = function () {
@@ -19,7 +19,7 @@ function cargarDatos(d, num) {
   for (var x = 0; x < d.members.length; x++) {
     var user = "usuario" + (x+1) + ".png' ";
     text = "<tr>";
-    text += "<td class='p-4'>" + d.members[x].name + "</td><td class='p-4'>" + d.squadName + "</td><td class='p-4'>" + d.formed + "</td><td class='p-4'>" + d.members[x].secretIdentity + "</td><td class='p-4'>" + "<img src='../img/tablasUsuarios/" + user + "alt=''>" + "</td><td class='p-4'>" + d.secretBase + "</td><td class='p-4'>";
+    text += "<td class='p-4'>" + d.members[x].name + "</td><td class='p-4'>" + d.members[x].usertype + "</td><td class='p-4'>" + d.members[x].telf + "</td><td class='p-4'>" + d.members[x].email + "</td><td class='p-4'>" + "<img src='../img/tablasUsuarios/" + user + "alt=''>" + "</td><td class='p-4'>" + d.members[x].cedula + "</td><td class='p-4'>";
     for (var es = 1; es <= num; es++) {
       text += "<i class='fa fa-star fa-1x mr-1 ml-1'></i>";
     }
