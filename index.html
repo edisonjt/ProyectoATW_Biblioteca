@@ -30,13 +30,16 @@
               <div class="form-group">
                 <div class="row">
                   <input type="email" placeholder="E-mail" required/>
+                  <input type="text" placeholder="Nombre de Usuario" required>
+                  <input type="text" placeholder="Teléfono" required>
+                  <input type="text" placeholder="Cédula de Identidad" required>
                   <input type="password" placeholder="Nueva contraseña" required/>
                   <input type="password" placeholder="Confirmar nueva contraseña" required/>
                 </div>                
               </div>
-              <button type="submit">Registrarse</button>  
+              <button type="submit" class="btn btn-primary">Registrarse</button>  
             </form>
-            <button id="goLeft" type="sub">Ya tengo una cuenta</button>
+            <button id="goLeft" type="sub" class="btn btn-outline-secondary">Ya tengo una cuenta</button>
           </div>
         </div>
 
@@ -51,13 +54,13 @@
             <form method="post" onsubmit="return false;">
               <div class="form-group">
                 <div class="row">
-                  <input type="text" placeholder="E-mail" required/>
-                  <input type="text" placeholder="Contraseña" require/>
+                  <input id="user" type="text" placeholder="Usuario" required/>
+                  <input id="password" type="password" placeholder="Contraseña" require/>
                 </div>                
               </div><br>
-              <button id="login" type="submit">Iniciar sesión</button>                          
+              <button id="login" type="submit" class="btn btn-primary" onclick="Login()">Iniciar sesión</button>                          
             </form>
-            <button id="goRight">No tengo una cuenta</button>
+            <button id="goRight" class="btn btn-outline-secondary">No tengo una cuenta</button>
           </div>
         </div>
       </div>
