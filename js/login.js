@@ -16,3 +16,18 @@ $(document).ready(function(){
       });
     });
   });
+
+  function Login(){ 
+    var done=0; 
+    var usuario=document.getElementById("user").value; 
+    var password=document.getElementById("password").value; 
+    if (usuario=="admin" && password=="admin") { 
+      window.location="#"; 
+    } 
+    if (usuario=="usuario" && password=="usuario") { 
+      window.location="#"; 
+    } 
+    if (usuario=="" && password=="") { 
+      alert("Usuario y contraseña inválidos"); 
+    } 
+} 
