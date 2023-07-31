@@ -18,18 +18,13 @@ $(document).ready(function(){
   });
 
   function Login(){ 
-    var done=0; 
     var usuario=document.getElementById("user").value; 
     var password=document.getElementById("password").value; 
     if (usuario=="admin" && password=="admin") { 
-      window.location="/html/inicio.html"; 
+      window.location="https://www.google.com/"; 
     } else {
       alert("Usuario y contraseña inválidos"); 
 
     }
-    // if (usuario=="usuario" && password=="usuario") { 
-    //   window.location="#"; 
-    // } 
-    // if (usuario=="" && password=="") { 
-    // } 
+
 } 
